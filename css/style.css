@@ -510,7 +510,7 @@ main{
     color: #333;
     font-size: 20px;
     font-weight: bold;
-    line-height: 2;
+    line-height: 3;
     cursor: pointer;
     transition: all 0.4s ease;
 }
