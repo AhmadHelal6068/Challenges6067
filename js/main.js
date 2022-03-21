@@ -182,7 +182,7 @@ function displayimg(n){
 
 
 // ------------------------- Start Section
-var sectionBtn = document.querySelectorAll(".btn");
+var sectionBtn = document.querySelectorAll(".btnS");
 var sectionBox = document.querySelectorAll(".box");
 
 sectionBtn.forEach(btn => {

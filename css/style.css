@@ -141,6 +141,52 @@
 
 
 /* -------------------------------------- Start Plus */
+/* .plus-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 100px 0;
+}
+.plus .plus-item{
+    background-color: #eee;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 5px;
+}
+.plus .plus-item .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+}
+.plus .plus-item button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.plus .plus-item button:hover,
+.plus .plus-item button.activeC{
+    color: #fff;
+    background-color: crimson;
+}
+
+
+.plus .plus-item .bottom{
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    visibility: hidden;
+}
+.plus .plus-item .bottom.active{
+    visibility: inherit;
+} */
 main{
     padding: 150px 0;
     text-align: center;
@@ -253,6 +299,51 @@ main{
 .gallery .gallery-img .gallery-item img{
     width: 100%;
 }
+/* 
+.main .gallery-img .gallery-item .overflow{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.main .gallery-img .gallery-item:hover .overflow{
+    opacity: 1;
+}
+.main .gallery-img .gallery-item .overflow h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+}
+.main .gallery-img .gallery-item .overflow h3:hover{
+    background-color: crimson;
+}
+.main .gallery-img .gallery-item .overflow .like{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+}
+.main .gallery-img .gallery-item .overflow .like i{
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+.main .gallery-img .gallery-item i.active{
+    color: crimson;
+    transform: scale(1.3);
+    
+} */
+
 
 .popup{
     position: fixed;
@@ -294,6 +385,7 @@ main{
 }
 
 /* ------------------------------------- Start Slide */
+
 .slider{
     width: 100%;
     height: 100vh;
@@ -366,7 +458,7 @@ main{
     font-size: 18px;
     cursor: pointer;
     transition: all 0.4s ease;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 .slider .button a:hover{
     opacity: 1;
@@ -388,7 +480,7 @@ main{
     display: inline-block;
     margin: 0px 2px;
     transition: all 0.4s ease;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 .color,
 .dot:hover{
@@ -414,7 +506,7 @@ main{
     flex: 0 0 30%;
     border-right: 1px solid #777;
 }
-.section-box .left .btn{
+.section-box .left .btnS{
     color: #333;
     font-size: 20px;
     font-weight: bold;
@@ -422,17 +514,17 @@ main{
     cursor: pointer;
     transition: all 0.4s ease;
 }
-.section-box .left .btn.active,
-.section-box .left .btn:hover{
+.section-box .left .btnS.active,
+.section-box .left .btnS:hover{
     padding-left: 10px;
     color: crimson;
 }
-.section-box .left .btn .i_Ro{
+.section-box .left .btnS .i_Ro{
     padding-left: 7px;
     transition: all 0.4s ease;
 }
-.section-box .left .btn.active .i_Ro,
-.section-box .left .btn:hover .i_Ro{
+.section-box .left .btnS.active .i_Ro,
+.section-box .left .btnS:hover .i_Ro{
     transform: rotate(-90deg);
 }
 
@@ -457,19 +549,19 @@ main{
     color: #fff;
     padding: 5px 10px;
     border-radius: 4px;
-    animation: ani .5s linear;
+    animation: ani .3s linear;
 }
 
 .section-box .right .box h3{
     font-weight: bold;
     color: #333;
     font-size: 25px;
-    padding: 30px 0 10px;
-    animation: ani 0.8s linear;
+    padding: 50px 0 10px;
+    animation: ani 0.4s linear;
 }
 .section-box .right .box p{
     color: #888;
-    animation: ani 0.9s linear;
+    animation: ani 0.5s linear;
 }
 @keyframes ani {
     0%{
