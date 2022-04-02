@@ -65,6 +65,7 @@
 /* ------------------------------ Start Input */
 .pas{
     display: flex;
+    justify-content: center;
     top: 0;
     width: 400px;
     margin: 100px auto;
@@ -72,7 +73,7 @@
     height: 40px;
 }
 #input{
-    width: 80%;
+    width: 78%;
     padding: 0px 0px 0px 10px;
     background-color: #eee;
     border:1px solid cornflowerblue;
@@ -362,7 +363,15 @@ main{
     max-width: 400px;
 }
 
-
+@media(max-width:576px){
+    .gallery .gallery-list .btn{
+        padding: 5px 15px;
+    }
+    .gallery .gallery-img .gallery-item{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
 /* ----------------------------- Start Date */
 .date{
     height: 400px;
@@ -1078,13 +1087,13 @@ main{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 200px;
+    width: 250px;
     height: 30px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     /* z-index: 1; */
 }
 .portfolio .portfolio-item .bottom .three-box .box .right .tow_img img{
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
 }
 .portfolio .portfolio-item .bottom .three-box .box .right .tow_img div{
@@ -1093,7 +1102,6 @@ main{
     bottom: 0px;
     line-height: 30px;
     transform: translateX(-50%);
-    z-index: 2;
     color: #fff;
 }
 .portfolio .portfolio-item .bottom .three-box .box .right .tow_img div i{
@@ -1309,7 +1317,7 @@ main{
     .portfolio .portfolio-item .bottom .four-box .box-right .back{
         display: block;
         position: absolute;
-        left: -15px;
+        right: -10px;
         top: 10px;
         width: 30px;
         height: 30px;
@@ -1326,13 +1334,40 @@ main{
     }
 }
 
-
-
-
-
 .portfolio .portfolio-item .bottom .bottom-box{
     display: none;
 }
 .portfolio .portfolio-item .bottom .bottom-box.active{
     display: block;
+}
+@media(max-width:991px){
+    .portfolio .portfolio-item .bottom .one-box .file{
+        text-align: center;
+    }
+    .portfolio .portfolio-item .bottom .one-box .file div{
+        flex-direction: column;
+    }
+    .portfolio .portfolio-item .bottom .one-box .file div img{
+        margin-bottom: 20px;
+    }
+    .portfolio .portfolio-item .bottom .one-box .file div div{
+        margin: 0;
+    }
+    .portfolio .portfolio-item .bottom .one-box form{
+        margin: 0 auto;
+    }
+    .portfolio .portfolio-item .top .se input{
+        width: 150px;
+    }
+}
+@media(max-width:576px){
+    .portfolio .portfolio-item .bottom .four-box .box-left{
+        padding: 30px;
+    }
+    .portfolio .portfolio-item .bottom .four-box .box-right .message .me div h3{
+        font-size: 12px;
+    }
+    .portfolio .portfolio-item .bottom .four-box .box-right .message .me div p{
+        font-size: 10px;
+    }
 }
