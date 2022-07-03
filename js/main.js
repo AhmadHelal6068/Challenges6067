@@ -1,12 +1,3 @@
-// window.addEventListener("load", () => {
-//     document.querySelector(".page-loader").classList.add("slide-out-right");
-//     setTimeout(() => {
-//         document.querySelector(".page-loader").style.display = "none";
-//     }, 1000);
-// });
-
-
-
 // ------------------------------ Start List 
 let listUl = document.querySelector(".list");
 let listBars = document.querySelector("#bars");
@@ -55,7 +46,6 @@ BtnT.forEach(btn => {
 
 // ------------------------------ Start Plus Div
 let faq = document.querySelectorAll(".faq");
-let faqPage = document.querySelector(".faq-page");
 
 faq.forEach((event) => {
     event.addEventListener("click", () => {
@@ -297,3 +287,14 @@ portfolioBtn.forEach(btn => {
         btn.classList.add("active");
     }
 })
+
+
+
+
+
+window.addEventListener("load", () => {
+    document.querySelector(".page-loader").classList.add("slide-out-right");
+    setTimeout(() => {
+        document.querySelector(".page-loader").style.display = "none";
+    }, 1000);
+});
