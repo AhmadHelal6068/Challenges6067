@@ -221,10 +221,19 @@ main{
     border: none;
     outline: none;
     margin: auto;
+    transition: all 0.3s ease;
 }
 .faq-body{
     margin: auto;
     padding: 10px 20px;
+    animation: anime .3s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+}
+@keyframes anime {
+    0%{
+        transform: scaleY(0);
+    }
 }
 .faq-page.active,
 .faq-page:hover{

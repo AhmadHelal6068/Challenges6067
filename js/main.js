@@ -47,16 +47,23 @@ BtnT.forEach(btn => {
 // ------------------------------ Start Plus Div
 let faq = document.querySelectorAll(".faq");
 
-faq.forEach((event) => {
-    event.addEventListener("click", () => {
-        if(event.classList.contains("active")){
-            event.classList.remove("active");
-        }else{
-            event.classList.add("active");
-        }
-    })
+// faq.forEach((event) => {
+//     event.addEventListener("click", () => {
+//         if(event.classList.contains("active")){
+//             event.classList.remove("active");
+//         }else{
+//             event.classList.add("active");
+//         }
+//     })
+// })
+faq.forEach(acc => {
+    acc.onclick = () => {
+        faq.forEach(remove => {
+            remove.classList.remove("active");
+        })
+        acc.classList.toggle("active");
+    }
 })
-
 
 
 // ---------------------------- Start Gallery
